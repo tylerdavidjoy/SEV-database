@@ -1572,3 +1572,59 @@ Version: '10.1.37-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2021-02-10 10:59:33 13596 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
 2021-02-10 11:09:10 13596 [ERROR] Invalid (old?) table or database name 'SEV-database'
 2021-02-10 11:09:16 13596 [ERROR] Invalid (old?) table or database name 'SEV-database'
+2021-02-10 11:40:31 2b4c InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
+2021-02-10 11:40:31 11084 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2021-02-10 11:40:31 11084 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2021-02-10 11:40:31 11084 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-02-10 11:40:31 11084 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-02-10 11:40:31 11084 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2021-02-10 11:40:31 11084 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-10 11:40:31 11084 [Note] InnoDB: Using generic crc32 instructions
+2021-02-10 11:40:31 11084 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2021-02-10 11:40:31 11084 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-10 11:40:31 11084 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-02-10 11:40:31 11084 [Note] InnoDB: The log sequence number 1835037 in ibdata file do not match the log sequence number 11475497 in the ib_logfiles!
+2021-02-10 11:40:31 11084 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
+2021-02-10 11:40:33 11084 [ERROR] InnoDB: Table sev-database/test_table in the InnoDB data dictionary has tablespace id 104, but tablespace with that id or name does not exist. Have you deleted or moved .ibd files? This may also be a table created with CREATE TEMPORARY TABLE whose .ibd and .frm files MySQL automatically removed, but the table still exists in the InnoDB internal data dictionary.
+InnoDB: Please refer to
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html
+InnoDB: for how to resolve the issue.
+2021-02-10 11:40:33 11084 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-02-10 11:40:33 11084 [Note] InnoDB: Waiting for purge to start
+2021-02-10 11:40:33 11084 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.41-84.1 started; log sequence number 11475497
+2021-02-10 11:40:33 4648 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2021-02-10 11:40:33 11084 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-10 11:40:33 11084 [Note] Server socket created on IP: '::'.
+2021-02-10 11:40:33 11084 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.1.37-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2021-02-10 14:10:34 1d30 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
+2021-02-10 14:10:34 7472 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2021-02-10 14:10:34 7472 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2021-02-10 14:10:34 7472 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-02-10 14:10:34 7472 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-02-10 14:10:34 7472 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2021-02-10 14:10:34 7472 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2021-02-10 14:10:34 7472 [Note] InnoDB: Using generic crc32 instructions
+2021-02-10 14:10:34 7472 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2021-02-10 14:10:34 7472 [Note] InnoDB: Completed initialization of buffer pool
+2021-02-10 14:10:34 7472 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-02-10 14:10:34 7472 [Note] InnoDB: The log sequence number 1835037 in ibdata file do not match the log sequence number 11478870 in the ib_logfiles!
+2021-02-10 14:10:36 7472 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
+2021-02-10 14:10:37 7472 [ERROR] InnoDB: Table sev-database/test_table in the InnoDB data dictionary has tablespace id 104, but tablespace with that id or name does not exist. Have you deleted or moved .ibd files? This may also be a table created with CREATE TEMPORARY TABLE whose .ibd and .frm files MySQL automatically removed, but the table still exists in the InnoDB internal data dictionary.
+InnoDB: Please refer to
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting-datadict.html
+InnoDB: for how to resolve the issue.
+2021-02-10 14:10:37 7472 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-02-10 14:10:37 7472 [Note] InnoDB: Waiting for purge to start
+2021-02-10 14:10:37 7472 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.41-84.1 started; log sequence number 11478870
+2021-02-10 14:10:37 1864 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2021-02-10 14:10:37 7472 [Note] Plugin 'FEEDBACK' is disabled.
+2021-02-10 14:10:37 7472 [Note] Server socket created on IP: '::'.
+2021-02-10 14:10:38 7472 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.1.37-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2021-02-10 14:11:07 11016 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-10 14:11:07 11016 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
+2021-02-10 14:26:36 9196 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2021-02-10 14:26:36 9196 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).
